@@ -5,6 +5,12 @@ let stringTrinta = '30';
 let numeroDez = 10;
 let stringDez = '10';
 
+console.log("Número"+numeroUm);
+console.log("String "+stringUm);
+console.log("Número"+numeroTrinta);
+console.log("String "+stringTrinta);
+console.log("Número"+numeroDez);
+console.log("String "+stringDez);
 if (numeroUm == stringUm) {
   console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes');
 } else {
