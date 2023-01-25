@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 03</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styleDesafio03.css">
 </head>
 <body>
+    <header>
+        <a href="../index.html">HOME</a>
+        <h1>Desafio 03</h1>
+    </header>
+    <main>
+        <form>
+            <div class="label-decisao">
+                <label for="decisao"> Qual carreira você deseja seguir?</label>
+            </div>
+            <!--Decisão de qual area seguir?-->
+            <div class="input-decisao">
+                <input type="button" onclick="mostra('.escolha-backend')" name="decisao" id="backend" value="Back-End" class="form-botao">
+                <input type="button" onclick="mostra('.escolha-frontend')" name="decisao" id="frontEnd" value="Front-End" class="form-botao">
+            </div>
+            <!--Escolha do Back end-->
+            <div class="escolha-backend hidden">
+                <p class="backend">Bem vindo a trilha de Back-End</p>
+                <!--Decisão de qual linguagem Back end seguir?-->
+                <label>Qual linguagem você deseja aprender C# ou Java?</label>
+                <input type="button" class="form-botao" value="csharp">
+                <input type="button" class="form-botao" value="java">
+            </div>
+            <!--Escolha do Front end-->
+            <div class="escolha-frontend hidden"> 
+                <p class="frontend">Bem vindo a trilha de Front-End</p>
+                <!--Decisão de qual linguagem Back end seguir?-->
+                <label>Qual linguagem você deseja aprender React ou Vue?</label>
+                <input type="button" class="form-botao" value="React">
+                <input type="button" class="form-botao" value="Vue">
+            </div>
+            
+        </form>
+    </main>
     <script src="../js/desafio03.js"></script>
 </body>
 </html>

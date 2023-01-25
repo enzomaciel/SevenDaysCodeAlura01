@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 02</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styleDesafio02.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Desafio 02</h1>
-    <label for="nome">Qual o seu nome? </label> <br>
-    <input type="text" onblur="pegarNome()" name="nome" id="nome" class="forms"> <br>
-    <label for="idade" >Qual a sua idade</label> <br>
-    <input type="number" onblur="pegarIdade()" name="idade" id="idade" class="forms">
+    <header>
+        <h1>Desafio 02</h1>
+    </header>
+    <main>
+        <form>
+            <label for="nome">Qual o seu nome? </label> 
+            <input type="text" name="nome" id="nome" class="forms"> 
+            <label for="idade">Qual a sua idade?</label> 
+            <input type="number" name="idade" id="idade" class="forms">
+            <label for="linguagem">Qual a linguagem de programação que está estudando atualmente?</label> 
+            <input type="text" name="linguagem" id="linguagem" class="forms">
+            <input type="button" onclick="iniciar()" value="enviar">
+        </form>
+    </main>
     <script src="../js/desafio02.js"></script>
 </body>
 </html>
